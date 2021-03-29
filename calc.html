@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+        <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <!--jQuery-->
+    <script src="./calculator.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="claculator">
+
+        <!-- Website design block -->
+        <div class="calculator_1 claculator_item website_design_block">
+            <h2>Website Design</h2>
+
+            <div class="range_block">
+                <span class="range_title">Sele‍‍‍ct a style</span>
+
+                <div class="range_block_with_spans range_block_select_styles">
+                    <span class="first_text">Simple template</span>
+                    <span class="last_text">Complex custom</span>
+                    <input type="range" id="select_style_slider">
+
+                </div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="range_block range_block_2">
+                <span class="range_title">Number of pages</span>
+
+                <div class="range_block_number_of_pages">
+                    <input type="range" id="range_number_of_pages">
+                </div>
+            </div>
+
+            <div class="separator_1px"></div>
+
+            <div class="price_design_block">
+                <span class="price_design_title">Design cost: </span>
+                <div class="price_design">$<span class="price_design_sum">15</span></div>
+            </div>
+
+        </div>
+        <!-- Website design block end -->
+
+
+        <!-- Website content block -->
+        <div class="calculator_2 claculator_item website_content_block">
+            <h2>Website Content</h2>
+
+            <div class="website_content">
+                <!-- website_content left  -->
+                <div class="website_content_left">
+                    <div class="website_content_left_stockImages">
+                        <span class="website_content_left_stockImages_title_left">Stock images: </span>
+                        <input type="number" value="0" id="stockImages_price">
+                        <span class="website_content_left_stockImages_title_right">at $10/image(avg.)</span>
+                    </div>
+                    <div class="website_content_left_copywriting">
+                            <span class="website_content_left_copywriting_title_left">Copywriting: </span>
+                            <input type="number" value="0" id="copywriting_price">
+                            <span class="website_content_left_copywriting_title_right">at $150/page(avg.)</span>
+                    </div>
+                </div>
+                <!-- website_content left end  -->
+
+                <!-- website_content right  -->
+                <div class="website_content_right">
+                    <p class="website_content_right_title">Logo design:</p>
+                    <input type="range" id="logo_design">
+                </div>
+                <!-- website_content right end -->
+            </div>
+
+            <div class="separator_1px"></div>
+            <div class="website_content_price_design_block">
+                <span class="price_design_title">Content cost: </span>
+                <div class="website_content_price_design">$<span class="website_content_price_design_sum">15</span></div>
+            </div>
+        </div>
+        <!-- Website content block end -->
+
+
+
+        <!-- Ecommerce block -->
+        <div class="calculator_3 claculator_item ecommerce_block">
+            <h2>Ecommerce</h2>
+
+            <div class="ecommerce_body">
+                <div class="ecommerce_left_block_title">Number of products</div>
+                <div class="ecommerce_right_block_calc">
+                    <input type="range" id="ecommerce_calc">
+                </div>
+            </div>
+
+            <div class="separator_1px"></div>
+            <div class="ecommerce_footer">
+                <span class="ecommerce_price_title">E-commerce cost: </span>
+                <div class="ecommerce_cost">$<span class="ecommerce_cost_sum">15</span></div>
+            </div>
+        </div>
+        <!-- Ecommerce block end -->
+
+
+        <!-- Website Add-ons -->
+        <div class="calculator_4 claculator_item website_addons_block">
+            <h2>Website add-ons</h2>
+
+            <div class="website_addons">
+
+                <div class="website_addons_left_section">
+                    <div class="wesite_addons_item toggle_lead_generation">
+                        <span>Forms/ Lead generation</span>
+                        <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                    </div>          
+                    <div class="wesite_addons_item toggle_video_galleries">
+                        <span>Image/ Video galleries</span>
+                        <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                    </div>          
+                    <div class="wesite_addons_item toggle_reservations">
+                        <span>Event scheduling/ Reservations</span>
+                        <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                    </div>          
+                    <div class="wesite_addons_item toggle_social_media">
+                        <span>Social Media (share/like/ reviews</span>
+                        <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                    </div>          
+                    <div class="wesite_addons_item toggle_onsite_search">
+                        <span>Onsite search</span>
+                        <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                    </div>          
+                </div>
+
+                <div class="website_addons_right_section">
+                        <div class="wesite_addons_item toggle_member_profiles">
+                                <span>Member login/ profiles</span>
+                                <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                        </div> 
+                        <div class="wesite_addons_item toggle_tracking">
+                                <span>Analytics & tracking</span>
+                                <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                        </div> 
+                        <div class="wesite_addons_item toggle_live_chat">
+                                <span>Live chat</span>
+                                <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                        </div> 
+                        <div class="wesite_addons_item toggle_blog">
+                                <span>Blog</span>
+                                <input type="checkbox" data-toggle="toggle" data-on="YES" data-off="NO">
+                        </div> 
+                </div>            
+            </div>
+
+            <div class="separator_1px"></div>
+            <div class="website_addons_footer">
+                <span class="website_addons_price_title">Add-ons cost: </span>
+                <div class="website_addons_const">$<span class="website_addons_const_sum">0</span></div>
+            </div>
+        </div>
+        <!-- Website Add-ons end -->
+
+    </div>
+
+
+</body>
+
+</html>
